@@ -1,0 +1,157 @@
+.catalog {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    display: block;
+    outline: none;
+    box-sizing: border-box;
+    background-color: #526994;
+    min-width: 100%;
+    min-height: 100%;
+}
+.optionsMenu {
+    position: absolute;
+    top: 0px;
+    left: 49%;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    padding: 20px;
+    border-bottom-right-radius: 8px;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    border-color: #081329;
+    border-style: solid;
+    border-width: 1px;
+    width: 48%;
+    height: 95%;
+    background-color: #081329;
+    > .buttonBlock {
+        position: absolute;
+        bottom: 10px;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 92%;
+        height: 120px;
+        padding: 1px;
+
+        > button {
+            margin: 10px;
+            width: 110px;
+            height: 25px;
+            border-color: transparent;
+            border-radius: 5px;
+            color: black;
+            cursor: pointer;
+            font-weight: bolder;
+            opacity: 0.8;
+            &:hover {
+                opacity: 1;
+            }
+        }
+    }
+    > .block {
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        margin-bottom: 30px;
+        > h3 {
+            color: antiquewhite;
+            margin-right: 5px;
+            font-size: 17px;
+            margin-top: 1px;
+        }
+        > input {
+            border-radius: 5px;
+            border-color: transparent;
+            background-color: antiquewhite;
+            font-size: 17px;
+            margin-left: 5px;
+        }
+        > textarea {
+            resize: none;
+            width: 400px;
+            height: 80px;
+            border-color: transparent;
+            background-color: antiquewhite;
+            border-radius: 5px;
+            font-size: 17px;
+            margin: 3px;
+            margin-top: 0px;
+        }
+    }
+}
+
+.directoryTree {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    border-color: #081329;
+    border-style: solid;
+    border-width: 1px;
+    width: 48%;
+    height: 95%;
+    background-color: antiquewhite;
+    overflow: scroll;
+    &::-webkit-scrollbar {
+        width: 7px;
+        height: 7px;
+        background-color: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        background-color: #081329;
+    }
+
+    &::-webkit-scrollbar-track {
+        border-radius: 10px;
+        background-color: transparent;
+    }
+}
+.itemCatalog {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    .header {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        margin: 1px;
+        min-width: 170px;
+        > h3 {
+            font-size: 17px;
+            cursor: pointer;
+            margin: 3px;
+        }
+        > input {
+            background-color: transparent;
+            border-color: transparent;
+            outline: none;
+            font-size: 17px;
+            cursor: pointer;
+            margin: 3px;
+        }
+        > img {
+            width: 15px;
+            height: 15px;
+            margin-left: 1px;
+            cursor: pointer;
+        }
+    }
+    .itemMenu {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        border-color: black;
+        border-style: solid;
+        border-width: 1px;
+        width: 200px;
+        height: 100px;
+    }
+}

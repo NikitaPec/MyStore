@@ -1,0 +1,25 @@
+.btn {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+    //border-radius: 7px;
+    //border-color: black;
+    //border-style: solid;
+    //border-width: 1px;
+    margin-left: 2px;
+    //background-color: rgb(144, 207, 207);
+    cursor: pointer;
+    opacity: 0.8;
+    &:hover {
+        opacity: 1;
+    }
+    > img {
+        width: 15px;
+        height: 15px;
+        //margin-left: 5px;
+        margin: 3px;
+        //padding: 1px;
+    }
+}

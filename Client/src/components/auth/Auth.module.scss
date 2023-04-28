@@ -1,0 +1,80 @@
+.AuthForm {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.SelectorType {
+    cursor: pointer;
+    margin-bottom: 8px;
+    padding: 1px 8px;
+    font-size: 16px;
+
+    &.active {
+        color: teal;
+        border-radius: 8px;
+        border-color: teal;
+        border-width: 1px;
+        border-style: solid;
+        opacity: 1;
+    }
+
+    &.inactive {
+        color: tomato;
+        border-radius: 8px;
+        border-color: tomato;
+        border-width: 1px;
+        border-style: solid;
+        opacity: 0.7;
+    }
+}
+
+.InputLogin {
+    display: flex;
+    flex-direction: column;
+    padding: 5px 10px 0px 10px;
+    > input {
+        width: 100%;
+        padding: 3px 15px;
+        margin: 5px 0;
+        border: 1px solid teal;
+        border-radius: 5px;
+    }
+}
+
+.Button {
+    justify-content: center;
+    padding: 2px 4px;
+    margin: 1px 100px;
+    font-size: 16px;
+    min-width: 80px;
+    background: transparent;
+    border: 1px solid;
+    border-radius: 8px;
+    cursor: pointer;
+    color: teal;
+    border-color: teal;
+}
+
+.InputPassword {
+    display: flex;
+    flex-direction: row;
+    padding: 0px 10px 5px 10px;
+
+    > input {
+        width: 90%;
+        padding: 3px 15px;
+        margin: 5px 0;
+        border: 1px solid teal;
+        border-radius: 5px;
+    }
+    > img {
+        margin: auto;
+        height: 20px;
+        width: 20px;
+        cursor: pointer;
+    }
+}
+
+.Error {
+    color: tomato;
+}

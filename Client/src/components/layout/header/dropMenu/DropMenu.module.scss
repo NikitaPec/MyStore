@@ -1,0 +1,66 @@
+.dropMenu {
+    position: fixed;
+    top: 45px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:before {
+        position: absolute;
+        top: -5px;
+        right: 20px;
+        height: 20px;
+        width: 20px;
+        transform: rotate(45deg);
+    }
+    > ul {
+        list-style: none;
+    }
+    &.active {
+        opacity: 1;
+        visibility: visible;
+        transform: translateX(0);
+        transition: 600ms ease;
+    }
+    &.inactive {
+        opacity: 0;
+        visibility: hidden;
+        transform: translateX(1000px);
+        transition: 600ms ease;
+    }
+}
+
+.dropMenuContent {
+    position: absolute;
+    top: 4px;
+    right: 3px;
+    background-color: #09131b;
+    border-radius: 8px;
+    border-width: 1px;
+    border-style: solid;
+    padding: 1px 10px;
+    width: 170px;
+}
+
+.dropMenuItem {
+    display: flex;
+    margin: 10px auto;
+    opacity: 1;
+    transition: 700ms;
+    &:hover {
+        opacity: 0.6;
+        cursor: pointer;
+    }
+    > img {
+        width: 25px;
+        height: 25px;
+        margin-right: 10px;
+    }
+    > div {
+        max-width: 100px;
+        margin-left: 10px;
+        color: #fff;
+    }
+}
